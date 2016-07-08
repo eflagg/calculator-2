@@ -8,15 +8,11 @@ calculator program yourself in this file.
 
 from arithmetic import *
 
+while True:
 
-# Your code goes here
+    calculator_question = raw_input(">")
 
-calculator_question = raw_input(">")
-tokens = calculator_question.split(" ")
-#if tokens[0] == "q":
-    #break
-print tokens
-for i in tokens:
+    tokens = calculator_question.split(" ")
 
     if tokens[0] == "+":
         print add(int(tokens[1]), int(tokens[2]))
@@ -24,7 +20,7 @@ for i in tokens:
     elif tokens[0] == "-":
         print subtract(int(tokens[1]), int(tokens[2]))
 
-    elif tokens[0] == "x":
+    elif tokens[0] == "*":
         print multiply(int(tokens[1]), int(tokens[2]))
 
     elif tokens[0] == "/":
@@ -42,6 +38,12 @@ for i in tokens:
     elif tokens[0] == "mod":
         print mod(int(tokens[1]), int(tokens[2]))
 
-
+    elif tokens[0] == "q":
+        break
 
         
+
+
+
+
+            
